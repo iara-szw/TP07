@@ -1,12 +1,29 @@
 <script src="js/ejercicios.js"></script>
 <script src="js/utils.js"></script>
+<div class="ejerciciouno">
+<h5>Ingresa tu nombre y edad</h5>
+<input type="text" id="nombre" name="nombre" required>
+<input type="string" id="nacimiento" required>
+<input type="submit" onclick="ejercicio1()">
+</form>
+</div>
 
-<input type="text" id="nombre">
-<input type="date" id="nacimiento">
 
+<div class="ejercicioDos">
 
-<div id="resultado">
-
-
+<input type="text" id="fruta">
+<input type="submit" onclick="ejercicio2()">
 
 </div>
+<button onclick="ejercicio3()">ejercicio3</button>
+<script>
+    function ejercicio1(){
+        calcularEdad();
+    }
+    function ejercicio2(){
+        buscarFruta();
+    }
+    function ejercicio3(){
+        comparardiez();
+    }
+</script>
