@@ -11,15 +11,15 @@ console.log(`Hola ${nombre}, tienes ${edad} años!`)
 //ejericio 2
 function buscarFruta(){
     console.log("ejercicio2")
-    const frutas=["Manzana","Banana","Kiwi","Frutilla","Mandarina","Naranja","Pera","Sandia","Pomelo","Melon"]
+    const frutas=["manzana","banana","kiwi","frutilla","mandarina","naranja","pera","sandia","pomelo","melon"]
     for(const fruta of frutas){
             console.log(fruta);
     }
     const pedida=document.getElementById("fruta");
-    if(frutas.includes(pedida)){
-        console.log(`Si, tenemos ${pedida}`)
+    if(frutas.includes(pedida.value.toLowerCase())){
+        console.log(`Si, tenemos ${pedida.value}`)
     }else{
-        console.log(`No, no tenemos ${pedida}`)
+        console.log(`No, no tenemos ${pedida.value}`)
     }
 }
 
@@ -43,4 +43,9 @@ function ciudades(){
     poblacion:283874739,
     extension:'a'
    }
+}
+
+//ejercicio 5
+function doblenum(numeros){
+   numeros
 }
