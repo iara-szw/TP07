@@ -4,7 +4,7 @@
 <h5>Ingresa tu nombre y edad</h5>
 <input type="text" id="nombre" name="nombre" required>
 <input type="string" id="nacimiento" required>
-<input type="submit" onclick="ejercicio1()">
+<input type="submit" onclick="calcularEdadJs()">
 </form>
 </div>
 
@@ -12,38 +12,40 @@
 <div class="ejercicioDos">
 
 <input type="text" id="fruta" placeholder="Ingresa la fruta que queres buscar:">
-<input type="submit" onclick="ejercicio2()">
+<input type="submit" onclick="buscarFruta()">
 
 </div>
-<button onclick="ejercicio3()">ejercicio3</button>
-<button onclick="ejercicio4()">ejercicio4</button>
+<button onclick="comparardiez()">ejercicio3</button>
+<button onclick="mostrarCiudad()">ejercicio4</button>
 <button onclick="ejercicio5()">ejercicio5</button>
-<button onclick="ejercicio6()">ejercicio6</button>
+<button onclick="asteriscos()">ejercicio6</button>
 
 <input type="text" id="listaNombres" placeholder="Ingresa nombres divididos por una coma:">
-<input type="submit" onclick="ejercicio7()">
+<input type="submit" onclick="nombresA()">
+<p id="nuevosNombres"></p>
 
+<input type="text" id="Frase" placeholder="Frase:">
+<input type="text" id="reemplazar" placeholder="palabraAReemplazar">
+<input type="text" id="reemplazo" placeholder="palabra de reemplazo">
+<p id="frasee"></p>
+<input type="submit" onclick="fraseReemplazar()">
+
+
+<input type="text" id="Cadena" placeholder="Frase:">
+<input type="number" id="Numero">
+<p id="caracteres"></p>
+<input type="submit" onclick="mostrarCaracteres()">
+
+
+
+<input type="text" id="listaElementos" placeholder="Ingresa elementos divididos por una coma:">
+<input type="submit" onclick="reemplazarComas()">
+<p id="elementos"></p>
 <script>
-    function ejercicio1(){
-        calcularEdadJs();
-    }
-    function ejercicio2(){
-        buscarFruta();
-    }
-    function ejercicio3(){
-        comparardiez();
-    }
-    function ejercicio4(){
-        mostrarCiudad();
-    }
+  
     function ejercicio5(){
         const numeros=[1,2,3,4,5,6,7,8,9,10,11,12,120]
         dobleNum(numeros);
     }
-    function ejercicio6(){
-        asteriscos();
-    }
-    function ejercicio7(){
-        nombresA();
-    }
+  
 </script>

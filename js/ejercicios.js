@@ -78,10 +78,41 @@ function asteriscos(){
 //ejercicio7
 function nombresA(){
     let nombres=document.getElementById("listaNombres").value;
-    nombres=nombres.split(" ");
-    let nombresA=nombres.filter(nombre => nombre.startsWith('A'));
-    for(nombre in nombresA){
-        console.log(nombre)
-    }
+    nombress=nombres.split(",");
+    console.log(nombress)
+    let nombresA=nombress.filter(nombre => nombre.startsWith('A'));
+    let nuevosNombres=document.getElementById("nuevosNombres");
+    nuevosNombres.innerHTML=nombresA;
+
+}
+
+//ejercicio8
+function fraseReemplazar(){
+
+    let palabra1=document.getElementById("reemplazar").value;
+    let palabra2=document.getElementById("reemplazo").value;
+    let frase=document.getElementById("Frase").value;
+    let frasee=document.getElementById("frasee");
+
+    frasee.innerHTML=frase.replace(palabra1,palabra2);
+}
+
+//ejercicio9
+function mostrarCaracteres(){
+    let cadena=document.getElementById("Cadena").value;
+    let numero=document.getElementById("Numero").value;
+    let caracteres=document.getElementById("caracteres");
+    caracteres.innerHTML=cadena.slice(0, numero)
+
+}
+
+
+
+//ejercicio10
+function reemplazarComas(){
+    let listaElementos=document.getElementById("listaElementos").value;
+    let elementos=document.getElementById("elementos");
+    listaElementos=listaElementos.split(",");
+  elementos.innerHTML=listaElementos.join("-");
 
 }
