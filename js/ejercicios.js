@@ -116,3 +116,12 @@ function reemplazarComas(){
   elementos.innerHTML=listaElementos.join("-");
 
 }
+
+//ejericicio11
+function calcularTotal(){
+    let listaPedidos=document.getElementById("listaPedidos").value;
+    const nlistaPedidos=listaPedidos.split(",")
+    const sumaTotal=sumarTodo(nlistaPedidos);
+    let total=document.getElementById("total")
+    total.innerHTML=sumaTotal
+}

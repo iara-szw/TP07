@@ -16,3 +16,14 @@ function calcularEdad(nacimiento){
                 }}
     return edad;
 }
+
+function sumarTodo(nlistaPedidos){
+let sumaTotal=0;
+ for (pedido of nlistaPedidos){
+        let posicion=pedido.indexOf(":")
+        let num=parseInt(pedido.slice(posicion+1))
+        sumaTotal=sumaTotal+num
+    }
+
+return sumaTotal;
+}
