@@ -5,12 +5,13 @@
 </head>
 
 <body>
+    <header>
+        <h1>Página de ejercicios</h1>
+            <h2>SOY UNA PÁGINA MUY DIVERTIDA</h2>
+    </header>
     <main>
         <section>
-            <h1>Página de ejercicios</h1>
-            <h2>SOY UNA PÁGINA MUY DIVERTIDA</h2>
-        </section>
-        <section>
+            <h1>1-Calculadora de edad</h1>
             <P>Ingresa tu nombre y fecha de nacimiento</P>
             <div>
                 <input type="text" id="nombre" placeholder="Nombre" required>
@@ -20,56 +21,69 @@
             </div>
         </section>
         <section>
+            <h1>2-Buscador de frutas</h1>
             <div>
-                <p>Ingresá la fruta que queres buscar:</p>
+                <p>Ingresá la fruta que queres encontrar:</p>
                 <input type="text" id="fruta" placeholder="Tirá fruta">
                 <input type="submit" onclick="buscarFruta()">
 
             </div>
         </section>
         <section>
+            <h1>3-Comparación de valores</h1>
             <button onclick="comparardiez()">ejercicio3</button>
         </section>
         <section>
+            <h1>4-Valores de ciudades</h1>
             <button onclick="mostrarCiudad()">ejercicio4</button>
         </section>
         <section>
+            <h1>5-Duplicador de valores</h1>
             <button onclick="ejercicio5()">ejercicio5</button>
         </section>
         <section>
+            <h1>6-Generador de asteriscos</h1>
             <button onclick="asteriscos()">ejercicio6</button>
         </section>
 
-        <section> <input type="text" id="listaNombres" placeholder="Ingresa nombres divididos por una coma:">
+        <section>
+            <h1>7-Buscador de nombres que empiecen con "A"</h1>
+             <input type="text" id="listaNombres" placeholder="Ingresa nombres divididos por una coma:">
             <input type="submit" onclick="nombresA()">
             <p id="nuevosNombres"></p>
         </section>
 
         <section>
+            <h1>8-Reemplazador de palabras</h1>
             <input type="text" id="Frase" placeholder="Frase:">
             <input type="text" id="reemplazar" placeholder="palabraAReemplazar">
             <input type="text" id="reemplazo" placeholder="palabra de reemplazo">
             <p id="frasee"></p>
             <input type="submit" onclick="fraseReemplazar()">
         </section>
-        <section> <input type="text" id="Cadena" placeholder="Frase:">
+
+        <section> 
+            <h1>9-Cortador de frases</h1>
+            <input type="text" id="Cadena" placeholder="Frase:">
             <input type="number" id="Numero">
             <p id="caracteres"></p>
             <input type="submit" onclick="mostrarCaracteres()">
         </section>
         <section>
+            <h1>10-Reemplazador de comas</h1>
             <input type="text" id="listaElementos" placeholder="Ingresa elementos divididos por una coma:">
             <input type="submit" onclick="reemplazarComas()">
             <p id="elementos"></p>
         </section>
         <section>
+            <h1>11-Calculadora de valor total</h1>
             <input type="text" id="listaPedidos" placeholder="Ingresa elementos divididos por una coma:">
             <input type="submit" onclick="calcularTotal()">
             <p id="total"></p>
         </section>
     </main>
 </body>
-<script>
+<!-- <script>
 
     const colors = [
         "#FF0099", // Rosa galáctico
@@ -128,9 +142,12 @@
 
 
 
+
+</script> -->
+<script>
+    
     function ejercicio5() {
         const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 120]
         dobleNum(numeros);
     }
-
 </script>
